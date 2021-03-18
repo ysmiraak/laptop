@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [[ $1 =~ ^[0-9]+$ && $1 -ge 0 && $1 -le 100 ]]; then
+    xbacklight -set $1
+else
+    case $1 in
+        -) xbacklight -dec 10 ;;
+        +) xbacklight -inc 10 ;;
+        *) xbacklight -set 1  ;;
+    esac
+fi

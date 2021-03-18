@@ -1,0 +1,96 @@
+an outline of my archlinux system setup for [[https://wiki.archlinux.org/index.php/Dell_XPS_15][dell xps 15]] 9500
+
+* power management
+
+** disable nvidia for power saving
+
+following
+- https://wiki.archlinux.org/index.php/bumblebee
+
+installed
+- bbswitch
+- bumblebee
+- mesa
+- xf86-video-intel
+
+configured
+- /etc/bumblebee/bumblebee.conf
+- /etc/systemd/system/nvidia-enable.service
+
+enabled
+- bumblebeed.service
+- nvidia-enable.service
+
+** use swapfile for hibernation
+
+following
+- https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation
+- https://wiki.archlinux.org/index.php/Swap#Manually
+
+configured
+- /etc/default/grub
+- /etc/fstab
+- /etc/mkinitcpio.conf
+
+** suspend then hibernate on idle and lid close
+
+following
+- https://wiki.archlinux.org/index.php/Power_management#Power_management_with_systemd
+
+configured
+- /etc/systemd/system.conf.d/custom.conf
+
+** TODO hibernate on low battery
+
+- https://wiki.archlinux.org/index.php/laptop#Hibernate_on_low_battery_level
+- problem: no udev events on discharge
+
+* input devices
+
+** keyboard
+
+following
+- https://wiki.archlinux.org/index.php/Linux_console/Keyboard_configuration
+
+configured
+- /etc/vconsole.ascii.map
+- /etc/vconsole.conf
+
+** touchpad
+
+following
+- https://wiki.archlinux.org/index.php/Libinput
+
+installed
+- xf86-input-libinput
+- xorg-xinput
+
+configured
+- /etc/X11/xorg.conf.d/30-touchpad.conf
+
+* misc
+
+** time syncing
+
+following
+- https://wiki.archlinux.org/index.php/Chrony
+
+installed
+- chrony
+- netctl-dispatcher-chrony
+
+enabled
+- chronyd.service
+
+** pacman hooks
+
+- /etc/pacman.d/hooks/mirrorupgrade.hook
+- /etc/pacman.d/hooks/nvidia.hook
+- /etc/pacman.d/hooks/xmonad.hook
+
+** custom scripts
+
+- /usr/local/sbin/backlight
+- /usr/local/sbin/dualscreen
+- /usr/local/sbin/hibernate
+- /usr/local/sbin/suspend

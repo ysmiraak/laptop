@@ -1,0 +1,6 @@
+/getty.target.wants
+/getty@tty1.service.d
+/graphical.target.wants
+/multi-user.target.wants
+/netctl@torfstr18.service.d
+/shutdown.target.wants

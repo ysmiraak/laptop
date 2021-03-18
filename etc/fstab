@@ -1,0 +1,8 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+PARTUUID=97982524-cfd0-4e97-8ca8-13fd65d69360	/               ext4            rw,relatime	0 1
+PARTUUID=ecc5a41d-5d71-4a2f-af37-ea7a2cb666de	/efi            vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+PARTUUID=5f987599-fa8a-48b8-b4fe-8687d95173ba	/data           ntfs            rw,nosuid,nodev,user_id=0,group_id=0,allow_other,blksize=4096	0 0
+/swapfile none swap defaults 0 0

@@ -43,6 +43,8 @@
 /ipset.conf
 /iptables
 /issue
+/java-openjdk
+/java11-openjdk
 /kernel
 /keyutils
 /krb5.conf
@@ -106,6 +108,7 @@
 /rhashrc
 /rpc
 /rsyncd.conf
+/sbt
 /securetty
 /security
 /sensors.d

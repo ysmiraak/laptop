@@ -1,6 +1,9 @@
+/bluetooth.target.wants
+/dbus-org.bluez.service
 /getty.target.wants
 /getty@tty1.service.d
 /graphical.target.wants
 /multi-user.target.wants
 /netctl@torfstr18.service.d
+/openpyn.service
 /shutdown.target.wants

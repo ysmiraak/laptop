@@ -6,6 +6,7 @@
 /logind.conf
 /network
 /networkd.conf
+/oomd.conf
 /pstore.conf
 /resolved.conf
 /sleep.conf

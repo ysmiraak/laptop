@@ -11,6 +11,7 @@
 /bash.bashrc
 /bindresvport.blacklist
 /binfmt.d
+/bluetooth
 /ca-certificates
 /conf.d
 /crypttab
@@ -43,6 +44,7 @@
 /ipset.conf
 /iptables
 /issue
+/jack
 /java-openjdk
 /java11-openjdk
 /kernel
@@ -92,6 +94,7 @@
 /papersize
 /passwd
 /passwd-
+/pinentry
 /pkcs11
 /polkit-1
 /profile
@@ -125,6 +128,7 @@
 /sudoers
 /sudoers.d
 /sysctl.d
+/texmf
 /tmpfiles.d
 /trusted-key.key
 /ts.conf

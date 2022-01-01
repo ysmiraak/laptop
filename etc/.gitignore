@@ -15,6 +15,7 @@
 /ca-certificates
 /conf.d
 /crypttab
+/daxctl.conf.d
 /dconf
 /depmod.d
 /dhcpcd.conf
@@ -81,6 +82,7 @@
 /my.cnf
 /my.cnf.d
 /ndctl
+/ndctl.conf.d
 /netconfig
 /netctl
 /nginx
@@ -134,6 +136,7 @@
 /ts.conf
 /udev
 /udisks2
+/v2raya
 /vdpau_wrapper.cfg
 /vpnc
 /wgetrc

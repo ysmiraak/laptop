@@ -17,6 +17,7 @@
 /crypttab
 /daxctl.conf.d
 /dconf
+/debuginfod
 /depmod.d
 /dhcpcd.conf
 /e2scrub.conf
@@ -25,8 +26,10 @@
 /fonts
 /fuse.conf
 /gai.conf
+/gdb
 /gemrc
 /gmrunrc
+/gprofng.rc
 /group
 /group-
 /grub.d
@@ -89,6 +92,8 @@
 /nscd.conf
 /nsswitch.conf
 /openldap
+/openmpi
+/openpmix
 /openvpn
 /os-release
 /pacman.conf
@@ -125,6 +130,8 @@
 /skel
 /ssh
 /ssl
+/subgid
+/subuid
 /sudo.conf
 /sudo_logsrvd.conf
 /sudoers
@@ -132,10 +139,12 @@
 /sysctl.d
 /texmf
 /tmpfiles.d
+/tpm2-tss
 /trusted-key.key
 /ts.conf
 /udev
 /udisks2
+/v2ray
 /v2raya
 /vdpau_wrapper.cfg
 /vpnc

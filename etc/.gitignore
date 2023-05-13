@@ -65,7 +65,7 @@
 /libreoffice
 /libva.conf
 /locale.conf
-/locale.gen
+/locale.gen.pacnew
 /localtime
 /login.defs
 /logrotate.d
@@ -99,6 +99,7 @@
 /pacman.conf
 /pam.d
 /papersize
+/paperspecs
 /passwd
 /passwd-
 /pinentry
@@ -153,3 +154,4 @@
 /xattr.conf
 /xdg
 /xinetd.d
+/xtables.conf
